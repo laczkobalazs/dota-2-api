@@ -1,11 +1,12 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import {Link, Route} from "react-router-dom"
+import HeroList from "../components/heroes/HeroList";
 
 function Navbar() {
     return (
         <div className="navbar">
             <Link to="/">Home</Link>
-            <Link to="/heroes">Heroes</Link>
+            <Route path="/heroes" component={HeroList}/>
         </div>
     )
 }
