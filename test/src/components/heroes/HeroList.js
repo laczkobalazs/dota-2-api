@@ -19,7 +19,23 @@ function HeroList() {
 
     if (loading) return <h1 style={{ textAlign:"center" }}>Loading...</h1>
 
-    //const style {}
+    const flexContainer= {
+        display: 'flex',
+        flexWrap: 'wrap',
+        flex: 3,
+        flexDirection: 'row',
+        width: '1000px',
+        justifyContent: "center"
+    }
+
+    const flexDivStyle = {
+        display: 'inline-block',
+        background: '#f1f1f1',
+        width: '10px',
+        flex: 10,
+        flexGrow: 1,
+
+    }
 
     let content = "";
 
@@ -31,8 +47,8 @@ function HeroList() {
 
     return (
         <div className="container-inner">
-            <div className="section">
-                <div className="hero-grid">
+            <div style={flexContainer} className="flex-container">
+                <div style={flexDivStyle} className="hero-grid">
                     {content}
                 </div>
             </div>
