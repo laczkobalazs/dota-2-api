@@ -11,7 +11,11 @@ function HeroList() {
     })
 }
     return (
-
+        <div>
+            {heroes.map((h) => {
+                return <Card key={h.id} name={h.localized_name}/>
+            })}
+        </div>
     )
 
 export default HeroList;
