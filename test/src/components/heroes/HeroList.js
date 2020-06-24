@@ -22,23 +22,21 @@ function HeroList() {
     const flexContainer= {
         display: 'flex',
         flexWrap: 'wrap',
-        flex: 3,
         flexDirection: 'row',
-        width: '1000px',
-        justifyContent: "center"
+        width: '90%',
+        justifyContent: "center",
+        margin: 'auto'
     }
 
     const flexDivStyle = {
         display: 'inline-block',
         background: '#f1f1f1',
-        width: '10px',
-        flex: 10,
-        flexGrow: 1,
+
+
 
     }
 
     let content = "";
-
     if (heroes) {
         content = heroes.map((h) => {
                 return <Card key={h.id} hero={h.name} heroName={h.localized_name}/>

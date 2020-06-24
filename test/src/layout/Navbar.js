@@ -10,7 +10,7 @@ function Navbar() {
         fontSize: '14px',
     }
     return (
-        <div>
+        <div style={{ margin:0 }}>
             <div style={headerNavbarStyle} className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/heroes">Heroes</Link>
