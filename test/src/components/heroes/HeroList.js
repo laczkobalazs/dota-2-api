@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from "/layout/Card"
+import Card from "../../layout/Card.js"
 
 function HeroList() {
     const [heroes, setHeroes] = useState([]);
@@ -12,18 +12,31 @@ function HeroList() {
         axios.get("https://api.opendota.com/api/heroes")
             .then((response) => {
                 setLoading(false)
-                setHeroes(response.data.results)
+                setHeroes(response.data)
+                console.log(heroes);
             })
     }, [])
 
-}
+    if (loading) return <h1 style={{ textAlign:"center" }}>Loading...</h1>
+
+    //const style {}
+
+    let content = "";
+
+    if (heroes) {
+        content = heroes.map((h) => {
+                return <Card key={h.id} hero={h.name}/>
+            })
+    }
     return (
-        <div>
-            {heroes.map((h) => {
-                //return <Card key={h.id} hero={h.localized_name}/>
-                return <div>hero={localized_name}</div>
-            })}
+        <div className="container-inner">
+            <div className="section">
+                <div className="hero-grid">
+                    {content}
+                </div>
+            </div>
         </div>
     )
+}
 
 export default HeroList;
