@@ -25,9 +25,10 @@ function HeroList() {
 
     if (heroes) {
         content = heroes.map((h) => {
-                return <Card key={h.id} hero={h.name}/>
+                return <Card key={h.id} hero={h.name} heroName={h.localized_name}/>
             })
     }
+
     return (
         <div className="container-inner">
             <div className="section">
