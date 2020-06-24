@@ -1,11 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import HeroList from "./components/heroes/HeroList";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import Navbar from "./layout/Navbar";
+
 
 function App() {
   return (
-      <HeroList />
+      <div className="background">
+          <Router>
+              <Navbar/>
+          </Router>
+      </div>
   );
 }
 
