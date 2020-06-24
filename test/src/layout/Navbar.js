@@ -8,9 +8,10 @@ function Navbar() {
         position: 'relative',
         verticalAlign: 'top',
         fontSize: '14px',
+        height: '30px'
     }
     return (
-        <div style={{ margin:0 }}>
+        <div style={{ margin: 0 }}>
             <div style={headerNavbarStyle} className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/heroes">Heroes</Link>

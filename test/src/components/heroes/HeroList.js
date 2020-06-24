@@ -22,32 +22,28 @@ function HeroList() {
     const flexContainer= {
         display: 'flex',
         flexWrap: 'wrap',
-        flexDirection: 'row',
         width: '90%',
-        justifyContent: "center",
+        justifyContent: "flex-left",
         margin: 'auto',
-        flexBasis: '2'
+        paddingTop: '30px'
     }
 
     const flexDivStyle = {
         display: 'inline-block',
         background: '#f1f1f1',
-
-
-
     }
 
     let content = "";
     if (heroes) {
         content = heroes.map((h) => {
-                return <Card key={h.id} hero={h.name} heroName={h.localized_name}/>
+                return <Card style={flexDivStyle} key={h.id} hero={h.name} heroName={h.localized_name}/>
             })
     }
 
     return (
         <div className="container-inner">
-            <div style={flexContainer} className="flex-container">
-                <div style={flexDivStyle} className="hero-grid">
+            <div className="flex-container">
+                <div style={flexContainer} className="hero-grid">
                     {content}
                 </div>
             </div>
