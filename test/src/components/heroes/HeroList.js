@@ -17,7 +17,7 @@ function HeroList() {
             })
     }, [])
 
-    if (loading) return <h1 style={{ textAlign:"center" }}>Loading...</h1>
+    if (loading) return <h1 style={{ textAlign:"center", color: '#f1f1f1' }}>Loading...</h1>
 
     const flexContainer= {
         display: 'flex',
@@ -25,7 +25,8 @@ function HeroList() {
         flexDirection: 'row',
         width: '90%',
         justifyContent: "center",
-        margin: 'auto'
+        margin: 'auto',
+        flexBasis: '2'
     }
 
     const flexDivStyle = {
