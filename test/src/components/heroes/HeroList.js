@@ -25,12 +25,19 @@ function HeroList() {
         width: '90%',
         justifyContent: "flex-left",
         margin: 'auto',
-        paddingTop: '30px'
+        paddingTop: '30px',
+        background: '#242F39',
     }
 
     const flexDivStyle = {
         display: 'inline-block',
-        background: '#f1f1f1',
+
+    }
+
+    const outerContainerStyle = {
+        background: '#242F39',
+        margin: '0',
+        padding: '0',
     }
 
     let content = "";
@@ -41,9 +48,9 @@ function HeroList() {
     }
 
     return (
-        <div className="container-inner">
-            <div className="flex-container">
-                <div style={flexContainer} className="hero-grid">
+        <div style={outerContainerStyle} className="outerContainer">
+            <div className="flexContainer">
+                <div style={flexContainer} className="heroGrid">
                     {content}
                 </div>
             </div>
