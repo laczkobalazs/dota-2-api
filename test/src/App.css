@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.team-container img {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
