@@ -1,21 +1,9 @@
-import React, {useState, useEffect} from "react";
-import axios from 'axios'
-import {Link} from 'react-router-dom'
+import React, {useContext} from "react";
+import {Link} from 'react-router-dom';
+import {MatchContext} from "../../context/MatchContext";
 
 const Matches = () => {
-    const [matches, setMatches] = useState([]);
-
-
-    useEffect(() => {
-        axios.get('https://api.opendota.com/api/proMatches')
-            .then(result => {
-                console.log("Fetching pro matches")
-                setMatches(result.data)
-                console.log(result.data)
-            })
-    }, [])
-
-
+    const matches = useContext(MatchContext)
     return (
         <ul>
             <div className="listed-matches">
