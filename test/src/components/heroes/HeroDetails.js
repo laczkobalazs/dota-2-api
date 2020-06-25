@@ -23,12 +23,12 @@ function HeroDetails() {
         })
     }, [])
 
-    console.log("allherostats: "+ heroStats)
+    //console.log("allherostats: "+ heroStats)
 
 
     return (
         <>
-            {console.log(currentHero)}
+            {/*console.log(currentHero)*/}
             <div>{currentHero.name}</div>
         </>
     )
