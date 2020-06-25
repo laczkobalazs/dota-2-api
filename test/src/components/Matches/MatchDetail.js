@@ -4,6 +4,7 @@ import {useParams} from 'react-router'
 
 function MatchDetail() {
     const [match, setMatch] = useState(null);
+    const [heroes, setHeroes] = useState([]);
 
     let {id} = useParams();
 
@@ -12,44 +13,67 @@ function MatchDetail() {
         console.log("Fetching " + id + "match")
         axios.get(url + id)
             .then(res => {
+                console.log(res.data.picks_bans)
+                setHeroes(res.data.picks_bans)
                 setMatch(res.data)
             })
             .catch(reason => console.log(reason))
     }, [id])
 
     let content = ""
+    let radiant = []
+    let dire = []
 
+    function selectHeroes() {
+        {
+            heroes.map((h) => {
+                if (h.is_pick && h.team === 0) {
+                    radiant.push(h.hero_id + " ")
+                    return radiant
+                } else if (h.is_pick && h.team === 1) {
+                    dire.push(h.hero_id + " ")
+                    return dire
+                }
+            })
+        }
+    }
+
+    selectHeroes()
 
     if (match) {
         content =
             <div className="team-container">
-                <table>
-                    <thead>
-                    <div className="team-name">
-                        <td>
-                            {match.radiant_team.name}
-                        </td>
-                        <td>
-                            <span> vs </span>
-                        </td>
-                        <td>
-                            {match.dire_team.name}
-                        </td>
+                <div className="radiant">
+                    <div className="radiant-header">
+                        {<img src={match.radiant_team.logo_url} alt=""/>}
+                        <p>{match.radiant_team.name}</p>
+                        {/*{radiant}*/}
                     </div>
-                    </thead>
-                    <tbody>
-                    <div className="team-logo">
-                        <td>
-                            {<img src={match.radiant_team.logo_url} alt=""/>}
-                        </td>
-                        <td>
-                            {<img src={match.dire_team.logo_url} alt=""/>}
-                        </td>
+                    <div className="radiant-body">
+                        <div>{<img src={match.dire_team.logo_url} alt=""/>} <p>{dire[0]}</p></div>
+                        {<img src={match.dire_team.logo_url} alt=""/>}
+                        {<img src={match.dire_team.logo_url} alt=""/>}
+                        {<img src={match.dire_team.logo_url} alt=""/>}
+                        {<img src={match.dire_team.logo_url} alt=""/>}
                     </div>
-                    </tbody>
-                </table>
+                </div>
+                <div className="line"/>
+                <span className="versus"> vs </span>
+                <div className="dire">
+                    <div className="dire-header">
+                        <p>{match.dire_team.name}</p>
+                        {<img src={match.dire_team.logo_url} alt=""/>}
+                        {/*{dire}*/}
+                    </div>
+                    <div className="dire-body">
+                        {<img src={match.radiant_team.logo_url} alt=""/>}
+                        {<img src={match.radiant_team.logo_url} alt=""/>}
+                        {<img src={match.radiant_team.logo_url} alt=""/>}
+                        {<img src={match.radiant_team.logo_url} alt=""/>}
+                        {<img src={match.radiant_team.logo_url} alt=""/>}
+                    </div>
+                </div>
             </div>
-
     }
 
     return (
@@ -57,7 +81,6 @@ function MatchDetail() {
             {content}
         </div>
     )
-
 }
 
 export default MatchDetail;

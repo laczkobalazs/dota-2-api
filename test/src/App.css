@@ -33,7 +33,7 @@ body {
 .navbar {
   padding-left: 10px;
   padding-top: 10px;
-  min-height: 2rem;
+  min-height: 4vh;
   background-color: #8d2929;
 }
 
@@ -46,12 +46,85 @@ body {
   text-decoration: underline;
 }
 
-
-.team-container table {
-  border-collapse: collapse;
+.match-container {
+  justify-content: center;
+  display: flex;
+  position: relative;
 }
 
-.team-container table, th, td {
-  border: 1px solid black;
-  text-align: center;
+.versus {
+  position: absolute;
+  left: 50%;
+  font-size: 3rem;
+  top: 9%;
+  transform: translateX(-50%);
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dire-body{
+  display: grid;
+  justify-content: center;
+}
+
+.radiant-body{
+  display: grid;
+  justify-content: center;
+}
+
+.radiant-body p {
+  display: inline;
+}
+
+.radiant-header {
+  position: relative;
+  right: 10%;
+}
+
+.radiant-header img {
+  width: 100px;
+  height: auto;
+}
+
+.dire-header img {
+  width: 100px;
+  height: auto;
+}
+
+.dire-header {
+  position: relative;
+  left: 10%;
+}
+
+.radiant-header p {
+  display: inline;
+  font-size: 4rem;
+  color: gold;
+}
+
+.dire-header p {
+  display: inline;
+  font-size: 4rem;
+  color: gold;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 24%;
+  height: 65vh;
+  width: 3px;
+  background-color: white;
+}
+
+.radiant {
+  position: relative;
+  top: 3vh;
+
+}.dire {
+  position: relative;
+  top: 3vh;
 }
