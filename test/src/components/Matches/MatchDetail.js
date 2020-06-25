@@ -55,36 +55,26 @@ function MatchDetail() {
     if (match) {
         content =
             <div>
-                <span className="winner">{checkWinner()}</span>
+                <span style={{color: 'gold'}} className="winner">{checkWinner()}
+                    <br/> {parseInt(match.duration / 60)} minutes</span>
                 <div className="team-container">
                     <div className="radiant">
                         <div className="radiant-header">
                             {<img src={match.radiant_team.logo_url} alt=""/>}
                             <p>{match.radiant_team.name}</p>
-                            {/*{radiant}*/}
                         </div>
                         <div className="radiant-body">
-                            <div>{<img src={match.dire_team.logo_url} alt=""/>} <p>{dire[0]}</p></div>
-                            {<img src={match.dire_team.logo_url} alt=""/>}
-                            {<img src={match.dire_team.logo_url} alt=""/>}
-                            {<img src={match.dire_team.logo_url} alt=""/>}
-                            {<img src={match.dire_team.logo_url} alt=""/>}
+                            <p style={{color: 'lightGray'}}> Score: {match.radiant_score}</p>
                         </div>
                     </div>
                     <div className="line"/>
-                    <span className="versus"> vs </span>
                     <div className="dire">
                         <div className="dire-header">
                             <p>{match.dire_team.name}</p>
                             {<img src={match.dire_team.logo_url} alt=""/>}
-                            {/*{dire}*/}
                         </div>
                         <div className="dire-body">
-                            {<img src={match.radiant_team.logo_url} alt=""/>}
-                            {<img src={match.radiant_team.logo_url} alt=""/>}
-                            {<img src={match.radiant_team.logo_url} alt=""/>}
-                            {<img src={match.radiant_team.logo_url} alt=""/>}
-                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                            <p style={{color: 'lightGray'}}> Score: {match.dire_score}</p>
                         </div>
                     </div>
                 </div>
