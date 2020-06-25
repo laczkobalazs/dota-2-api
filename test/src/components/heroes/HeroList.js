@@ -1,22 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import axios from 'axios';
 import Card from "../../layout/Card.js"
+import {HeroListContext} from "../../context/HeroListContext";
 
 function HeroList() {
-    const [heroes, setHeroes] = useState([]);
     const [loading, setLoading] = useState(true)
-
-
-    useEffect(() => {
-        setLoading(true)
-        axios.get("https://api.opendota.com/api/heroes")
-            .then((response) => {
-                setLoading(false)
-                setHeroes(response.data)
-            })
-    }, [])
-
-    if (loading) return <h1 style={{ textAlign:"center", color: '#f1f1f1' }}>Loading...</h1>
+    //setLoading(true)
+    const heroes = useContext(HeroListContext)
+    //if (loading) return <h1 style={{ textAlign:"center", color: '#f1f1g7' }}>Loading...</h1>
+    //setLoading(false)
+    //if (heroes) {setLoading(false)}
 
     const flexContainer= {
         display: 'flex',
