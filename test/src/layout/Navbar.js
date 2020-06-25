@@ -15,7 +15,7 @@ function Navbar() {
             <div style={headerNavbarStyle} className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/heroes">Heroes</Link>
-                <Route path="/heroes" component={HeroList}/>
+                <Route exact path="/heroes" component={HeroList}/>
             </div>
         </div>
     )

@@ -13,7 +13,6 @@ function HeroList() {
             .then((response) => {
                 setLoading(false)
                 setHeroes(response.data)
-                console.log(heroes);
             })
     }, [])
 
