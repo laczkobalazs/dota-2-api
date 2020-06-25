@@ -9,6 +9,7 @@ import Matches from "./components/Matches/Matches";
 import MatchDetail from "./components/Matches/MatchDetail";
 import {MatchProvider} from "./context/MatchContext";
 import HeroList from "./components/heroes/HeroList";
+import {HeroDetailProvider} from "./context/HeroDetailsContext";
 
 function App() {
     return (
@@ -18,7 +19,9 @@ function App() {
                 <HeroListProvider>
                     <Route exact path="/heroes" component={HeroList}></Route>
                 </HeroListProvider>
-                <Route exact path="/heroes/:heroName" component={HeroDetails}></Route>
+                <HeroDetailProvider>
+                    <Route exact path="/heroes/:heroName" component={HeroDetails}></Route>
+                </HeroDetailProvider>
                 <MatchProvider>
                     <Route exact path="/matches" component={Matches}></Route>
                 </MatchProvider>

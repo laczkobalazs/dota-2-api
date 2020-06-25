@@ -1,10 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {useParams} from "react-router";
 import HeroList from "./HeroList";
 import axios from "axios";
+import {HeroDetailsContext} from "../../context/HeroDetailsContext";
+
 
 
 function HeroDetails() {
+    const heroDetails = useContext(HeroDetailsContext)
+
+    /*
     const [heroStats, setHeroStats] = useState([])
     const [currentHero, setCurrentHero] = useState([])
     const [loading, setLoading] = useState(true)
@@ -24,12 +29,12 @@ function HeroDetails() {
     }, [])
 
     //console.log("allherostats: "+ heroStats)
-
+    */
 
     return (
         <>
             {/*console.log(currentHero)*/}
-            <div>{currentHero.name}</div>
+            <div>{console.log(heroDetails)}</div>
         </>
     )
 }
