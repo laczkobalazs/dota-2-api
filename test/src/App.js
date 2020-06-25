@@ -16,13 +16,13 @@ function App() {
             <Router>
                 <Navbar/>
                 <HeroListProvider>
-                    <Route exact path="/heroes" component={HeroList}></Route>
+                    <Route exact path="/heroes" component={HeroList}/>
                 </HeroListProvider>
-                <Route exact path="/heroes/:heroName" component={HeroDetails}></Route>
+                <Route exact path="/heroes/:heroName" component={HeroDetails}/>
                 <MatchProvider>
-                    <Route exact path="/matches" component={Matches}></Route>
+                    <Route exact path="/matches" component={Matches}/>
                 </MatchProvider>
-                <Route exact path="/match/:id" component={MatchDetail}></Route>
+                <Route exact path="/match/:id" component={MatchDetail}/>
             </Router>
         </div>
     )

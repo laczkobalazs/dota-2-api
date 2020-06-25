@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8073929-ea86-47c2-a0d3-fe5804b969ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-herolist" />
+        <entry key="$PROJECT_DIR$" value="feature-hero-details" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,22 +143,22 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="695" y="355" width="573" height="403" key="#com.intellij.fileTypes.FileTypeChooser/54.27.1866.1053@54.27.1866.1053" timestamp="1592915353224" />
-    <state width="1843" height="187" key="GridCell.Tab.0.bottom" timestamp="1593099261824">
+    <state width="1843" height="187" key="GridCell.Tab.0.bottom" timestamp="1593116383217">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.bottom/54.27.1866.1053@54.27.1866.1053" timestamp="1593099261824" />
-    <state width="1843" height="187" key="GridCell.Tab.0.center" timestamp="1593099261823">
+    <state width="1843" height="187" key="GridCell.Tab.0.bottom/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383217" />
+    <state width="1843" height="187" key="GridCell.Tab.0.center" timestamp="1593116383216">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.center/54.27.1866.1053@54.27.1866.1053" timestamp="1593099261823" />
-    <state width="1843" height="187" key="GridCell.Tab.0.left" timestamp="1593099261822">
+    <state width="1843" height="187" key="GridCell.Tab.0.center/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383216" />
+    <state width="1843" height="187" key="GridCell.Tab.0.left" timestamp="1593116383215">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.left/54.27.1866.1053@54.27.1866.1053" timestamp="1593099261822" />
-    <state width="1843" height="187" key="GridCell.Tab.0.right" timestamp="1593099261824">
+    <state width="1843" height="187" key="GridCell.Tab.0.left/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383215" />
+    <state width="1843" height="187" key="GridCell.Tab.0.right" timestamp="1593116383217">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1593099261824" />
+    <state width="1843" height="187" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383217" />
     <state x="54" y="60" width="1851" height="879" key="MergeDialog" timestamp="1593096780917">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
