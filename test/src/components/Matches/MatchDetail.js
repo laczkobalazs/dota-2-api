@@ -24,6 +24,18 @@ function MatchDetail() {
     let radiant = []
     let dire = []
 
+    function checkWinner() {
+        let victoryStatus = ""
+
+        if (match.radiant_win) {
+            victoryStatus = " Radiant Victory "
+        } else {
+            victoryStatus = " Dire Victory "
+        }
+        return victoryStatus
+    }
+
+
     function selectHeroes() {
         {
             heroes.map((h) => {
@@ -42,35 +54,38 @@ function MatchDetail() {
 
     if (match) {
         content =
-            <div className="team-container">
-                <div className="radiant">
-                    <div className="radiant-header">
-                        {<img src={match.radiant_team.logo_url} alt=""/>}
-                        <p>{match.radiant_team.name}</p>
-                        {/*{radiant}*/}
+            <div>
+                <span className="winner">{checkWinner()}</span>
+                <div className="team-container">
+                    <div className="radiant">
+                        <div className="radiant-header">
+                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                            <p>{match.radiant_team.name}</p>
+                            {/*{radiant}*/}
+                        </div>
+                        <div className="radiant-body">
+                            <div>{<img src={match.dire_team.logo_url} alt=""/>} <p>{dire[0]}</p></div>
+                            {<img src={match.dire_team.logo_url} alt=""/>}
+                            {<img src={match.dire_team.logo_url} alt=""/>}
+                            {<img src={match.dire_team.logo_url} alt=""/>}
+                            {<img src={match.dire_team.logo_url} alt=""/>}
+                        </div>
                     </div>
-                    <div className="radiant-body">
-                        <div>{<img src={match.dire_team.logo_url} alt=""/>} <p>{dire[0]}</p></div>
-                        {<img src={match.dire_team.logo_url} alt=""/>}
-                        {<img src={match.dire_team.logo_url} alt=""/>}
-                        {<img src={match.dire_team.logo_url} alt=""/>}
-                        {<img src={match.dire_team.logo_url} alt=""/>}
-                    </div>
-                </div>
-                <div className="line"/>
-                <span className="versus"> vs </span>
-                <div className="dire">
-                    <div className="dire-header">
-                        <p>{match.dire_team.name}</p>
-                        {<img src={match.dire_team.logo_url} alt=""/>}
-                        {/*{dire}*/}
-                    </div>
-                    <div className="dire-body">
-                        {<img src={match.radiant_team.logo_url} alt=""/>}
-                        {<img src={match.radiant_team.logo_url} alt=""/>}
-                        {<img src={match.radiant_team.logo_url} alt=""/>}
-                        {<img src={match.radiant_team.logo_url} alt=""/>}
-                        {<img src={match.radiant_team.logo_url} alt=""/>}
+                    <div className="line"/>
+                    <span className="versus"> vs </span>
+                    <div className="dire">
+                        <div className="dire-header">
+                            <p>{match.dire_team.name}</p>
+                            {<img src={match.dire_team.logo_url} alt=""/>}
+                            {/*{dire}*/}
+                        </div>
+                        <div className="dire-body">
+                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                        </div>
                     </div>
                 </div>
             </div>

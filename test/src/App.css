@@ -60,6 +60,13 @@ body {
   transform: translateX(-50%);
 }
 
+.winner {
+  justify-content: left;
+  position: absolute;
+  font-size: 2rem;
+  right: 85%;
+}
+
 .team-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
