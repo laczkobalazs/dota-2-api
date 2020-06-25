@@ -4,10 +4,11 @@ body {
 }
 
 .team-container img {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 150px;
+  height: 90px;
 }
 
 .listed-matches a {
@@ -42,5 +43,15 @@ body {
 }
 
 .navbar a:hover {
-text-decoration: underline;
+  text-decoration: underline;
+}
+
+
+.team-container table {
+  border-collapse: collapse;
+}
+
+.team-container table, th, td {
+  border: 1px solid black;
+  text-align: center;
 }

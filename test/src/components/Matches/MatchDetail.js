@@ -19,18 +19,35 @@ function MatchDetail() {
 
     let content = ""
 
+
     if (match) {
         content =
             <div className="team-container">
-                <div className="team-name">
-                    {match.radiant_team.name}
-                    <span>.vs</span>
-                    {match.dire_team.name}
-                </div>
-                <div className="team-logo">
-                    {<img src={match.radiant_team.logo_url} alt=""/>}
-                    {<img src={match.dire_team.logo_url} alt=""/>}
-                </div>
+                <table>
+                    <thead>
+                    <div className="team-name">
+                        <td>
+                            {match.radiant_team.name}
+                        </td>
+                        <td>
+                            <span> vs </span>
+                        </td>
+                        <td>
+                            {match.dire_team.name}
+                        </td>
+                    </div>
+                    </thead>
+                    <tbody>
+                    <div className="team-logo">
+                        <td>
+                            {<img src={match.radiant_team.logo_url} alt=""/>}
+                        </td>
+                        <td>
+                            {<img src={match.dire_team.logo_url} alt=""/>}
+                        </td>
+                    </div>
+                    </tbody>
+                </table>
             </div>
 
     }
