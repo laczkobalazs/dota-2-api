@@ -11,8 +11,8 @@ function Card({hero, heroName}) {
                 <Link to>
 
                 </Link>
-                <img src={"http://cdn.dota2.com/apps/dota2/images/heroes/" + heroNameStr + "_lg.png"} alt="no-img"/>
-                <img src={HeroPortrait(heroNameStr, "small")} alt="no-img"/>
+                <Link to={"/heroes/" + heroNameStr}><img src={"http://cdn.dota2.com/apps/dota2/images/heroes/" + heroNameStr + "_lg.png"} alt="no-img"/></Link>
+                {/*<img src={HeroPortrait(heroNameStr, "small")} alt="no-img"/>*/}
             </div>
         </div>
     )
