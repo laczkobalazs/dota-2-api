@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8073929-ea86-47c2-a0d3-fe5804b969ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020__06__23__15_19_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/components/Matches/MatchDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/components/Matches/MatchDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/components/heroes/HeroDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/components/heroes/HeroDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/components/heroes/HeroList.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/components/heroes/HeroList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/context/HeroListContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/context/HeroListContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/context/MatchContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/context/MatchContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/layout/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/layout/Card.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +99,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.start" />
       <item itemvalue="React Native.Unnamed" />
+      <item itemvalue="npm.start" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -108,6 +117,8 @@
       <workItem from="1592915005022" duration="2836000" />
       <workItem from="1592917868707" duration="75000" />
       <workItem from="1593096960402" duration="2347000" />
+      <workItem from="1593156566557" duration="2387000" />
+      <workItem from="1593513418945" duration="2922000" />
     </task>
     <servers />
   </component>
@@ -143,22 +154,22 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="695" y="355" width="573" height="403" key="#com.intellij.fileTypes.FileTypeChooser/54.27.1866.1053@54.27.1866.1053" timestamp="1592915353224" />
-    <state width="1843" height="187" key="GridCell.Tab.0.bottom" timestamp="1593116383217">
+    <state width="1843" height="187" key="GridCell.Tab.0.bottom" timestamp="1593164047879">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.bottom/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383217" />
-    <state width="1843" height="187" key="GridCell.Tab.0.center" timestamp="1593116383216">
+    <state width="1843" height="187" key="GridCell.Tab.0.bottom/54.27.1866.1053@54.27.1866.1053" timestamp="1593164047879" />
+    <state width="1843" height="187" key="GridCell.Tab.0.center" timestamp="1593164047879">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.center/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383216" />
-    <state width="1843" height="187" key="GridCell.Tab.0.left" timestamp="1593116383215">
+    <state width="1843" height="187" key="GridCell.Tab.0.center/54.27.1866.1053@54.27.1866.1053" timestamp="1593164047879" />
+    <state width="1843" height="187" key="GridCell.Tab.0.left" timestamp="1593164047879">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.left/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383215" />
-    <state width="1843" height="187" key="GridCell.Tab.0.right" timestamp="1593116383217">
+    <state width="1843" height="187" key="GridCell.Tab.0.left/54.27.1866.1053@54.27.1866.1053" timestamp="1593164047879" />
+    <state width="1843" height="187" key="GridCell.Tab.0.right" timestamp="1593164047879">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1843" height="187" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1593116383217" />
+    <state width="1843" height="187" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1593164047879" />
     <state x="54" y="60" width="1851" height="879" key="MergeDialog" timestamp="1593096780917">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
